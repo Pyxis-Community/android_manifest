@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="pyxis-community"
+           fetch="https://github.com/Pyxis-Community" />
+  <remote  name="lineageos"
+           fetch="https://github.com/LineageOS" />
+
+  <project name="android_device_xiaomi_pyxis" path="device/xiaomi/pyxis" revision="posp-12" remote="pyxis-community" />
+  <project name="android_device_xiaomi_sdm710-common" path="device/xiaomi/sdm710-common" revision="posp-12" remote="pyxis-community" />
+  <project name="android_hardware_xiaomi" path="hardware/xiaomi" revision="lineage-18.1" remote="lineageos" />
+  <project name="android_kernel_xiaomi_sdm710" path="kernel/xiaomi/sdm710" revision="10.0-caf" remote="pyxis-community" />
+  <project name="proprietary_vendor_xiaomi" path="vendor/xiaomi" revision="lineage-18.1" remote="pyxis-community" />
+  <remove-project name="device/generic/opengl-transport" />
+
+</manifest>
