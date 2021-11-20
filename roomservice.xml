@@ -5,12 +5,27 @@
            fetch="https://github.com/Pyxis-Community" />
   <remote  name="lineageos"
            fetch="https://github.com/LineageOS" />
+  <remote  name="ArrowOS"
+           fetch="https://github.com/ArrowOS" />
+	<remote  name="ArrowOS-Devices"
+           fetch="https://github.com/ArrowOS-Devices" />
 
-  <project name="android_device_xiaomi_pyxis" path="device/xiaomi/pyxis" revision="posp-12" remote="pyxis-community" />
-  <project name="android_device_xiaomi_sdm710-common" path="device/xiaomi/sdm710-common" revision="posp-12" remote="pyxis-community" />
-  <project name="android_hardware_xiaomi" path="hardware/xiaomi" revision="lineage-18.1" remote="lineageos" />
+  <project name="android_device_xiaomi_pyxis" path="device/xiaomi/pyxis" revision="spark-12" remote="pyxis-community" />
+  <project name="android_device_xiaomi_sdm710-common" path="device/xiaomi/sdm710-common" revision="spark-12" remote="pyxis-community" />
   <project name="android_kernel_xiaomi_sdm710" path="kernel/xiaomi/sdm710" revision="10.0-caf" remote="pyxis-community" />
   <project name="proprietary_vendor_xiaomi" path="vendor/xiaomi" revision="lineage-18.1" remote="pyxis-community" />
   <remove-project name="device/generic/opengl-transport" />
+  
+  <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="ArrowOS-Devices" revision="arrow-12.0" />
+  
+  <!-- Trash -->
+  <remove-project name="LineageOS/android_hardware_qcom_audio" />
+  <remove-project name="LineageOS/android_hardware_qcom_display" />
+  <remove-project name="LineageOS/android_hardware_qcom_media" />
+  
+	<!-- HALs -->
+	<project path="hardware/qcom-caf/sdm845/audio" name="android_hardware_qcom_audio" remote="ArrowOS" revision="arrow-12.0-caf-sdm845" />
+  <project path="hardware/qcom-caf/sdm845/display" name="android_hardware_qcom_display" remote="ArrowOS" revision="arrow-12.0-caf-sdm845" />
+  <project path="hardware/qcom-caf/sdm845/media" name="android_hardware_qcom_media" remote="ArrowOS" revision="arrow-12.0-caf-sdm845" />
 
 </manifest>
