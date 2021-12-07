@@ -7,8 +7,6 @@
            fetch="https://github.com/LineageOS" />
   <remote  name="ArrowOS"
            fetch="https://github.com/ArrowOS" />
-	<remote  name="ArrowOS-Devices"
-           fetch="https://github.com/ArrowOS-Devices" />
 
   <project name="android_device_xiaomi_pyxis" path="device/xiaomi/pyxis" revision="spark-12" remote="pyxis-community" />
   <project name="android_device_xiaomi_sdm710-common" path="device/xiaomi/sdm710-common" revision="spark-12" remote="pyxis-community" />
