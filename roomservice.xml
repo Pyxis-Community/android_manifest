@@ -10,8 +10,8 @@
   <project name="vendor_xiaomi" path="vendor/xiaomi" revision="s" remote="pyxis-community" />
 
   <!-- Trash -->
-  <remove-project name="android_hardware_qcom_display" />
-  <remove-project name="android_hardware_qcom_media" />
+  <remove-project name="LineageOS/android_hardware_qcom_display" />
+  <remove-project name="LineageOS/android_hardware_qcom_media" />
 
   <!-- HALs -->
   <project path="hardware/qcom-caf/sdm845/display" name="hardware_qcom_display-caf" remote="pyxis-community" revision="s-sdm710" />
