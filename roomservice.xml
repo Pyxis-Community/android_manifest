@@ -3,11 +3,15 @@
 
   <remote  name="pyxis-community"
            fetch="https://github.com/Pyxis-Community" />
+  <remote  name="ArrowOS-Devices"
+           fetch="https://github.com/ArrowOS-Devices" />
 
   <project name="device_xiaomi_pyxis" path="device/xiaomi/pyxis" revision="s-octavi" remote="pyxis-community" />
   <project name="device_xiaomi_sdm710-common" path="device/xiaomi/sdm710-common" revision="s-octavi" remote="pyxis-community" />
   <project name="android_kernel_xiaomi_sdm710" path="kernel/xiaomi/sdm710" revision="10.0-caf" remote="pyxis-community" />
   <project name="vendor_xiaomi" path="vendor/xiaomi" revision="s" remote="pyxis-community" />
+  
+  <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="ArrowOS-Devices" revision="arrow-12.0" />
 
   <!-- Trash -->
   <remove-project name="LineageOS/android_hardware_qcom_display" />
